@@ -9,6 +9,8 @@ let oscillator = audioCtx.createOscillator();
 let gain = audioCtx.createGain();
 oscillator.start();
 
+
+
 function testPlay(frequency) {
 
 //let oscillator = audioCtx.createOscillator();
@@ -40,14 +42,17 @@ function showQueue(){
     let data = [];
     for(i in notes){
         switch(notes[i][0]) {
-          case 20400:
+          case 19600:
             data[i] = 0;
             break;
-          case 19600:
+          case 20000:
             data[i] = 1;
             break;
-          case 20000:
+          case 20400:
             data[i] = 2;
+            break;
+          case 20800:
+            data[i] = 3;
             break;
         }
     }
